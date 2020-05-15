@@ -1,1 +1,1 @@
-# Algorthim-DJ-Part-1-
+# algorithm-DJ-Part-1
