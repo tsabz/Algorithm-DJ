@@ -28,16 +28,19 @@ $(document).ready(function(){
   const accessToken = getUrlParameter('access_token');
   console.log(`accessToken ${accessToken}`);
 
-  // $.ajax({
-  //     url: 'https://api.spotify.com/v1/search?q=macklemore&type=artist',
-  //     type: 'GET',
-  //     headers: {
-  //         'Authorization' : 'Bearer ' + accessToken
-  //     },
-  //     success: function(data) {
-  //       console.log('Success');
-  //       console.log(data);
-  //     }
-  // });
+  $.ajax({
+      url: 'https://api.spotify.com/v1/search?q=macklemore&type=artist',
+      type: 'GET',
+      headers: {
+          'Authorization' : 'Bearer ' + accessToken
+      },
+      success: function(data) {
+        console.log(' ');
+        console.log(' ');
+        console.log('================================ SUCCESS ========================');
+        console.log('Success');
+        console.log(JSON.stringify(data));
+      }
+  });
 
 })
