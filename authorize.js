@@ -1,6 +1,6 @@
 console.log('authorize');
 // Redirect user to authorize with Spotify
 console.log('redirecting');
-const redirect = "https://tsabz.github.io/Algorthim-DJ-Part-1-/?code=AQAi8OmfGYck8rEgLbvJiE1hNlInlAtA-2WvhLfH4Xrw509YEd3qaml5MVVqNWiH0j2V6s8gCTr0unpXQ5PodytSql14mvU44_q1rixs11ZQ6XmFICK7-gD2HUZkxG2DOTuLD5a9Xr9PdlGQXIYRB5Id77i5lt34EcGXN45tfIIDuwWw2s8zozGndzS_dh50Y_j2dzedyDxGUxTWqLy46ET5WA";
+const redirect = "https://accounts.spotify.com/authorize?client_id=a50e8af7f71f499f874125d893e94b60&scopes=playlist-read-private&response_type=code&redirect_uri=https%3A%2F%2Ftsabz.github.io%2FAlgorthim-DJ-Part-1-%2F";
  window.location.replace(redirect);
 console.log('redirect done');
