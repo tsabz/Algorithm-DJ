@@ -1,18 +1,16 @@
 $(document).ready(function(){
-  console.log('access v.10');
+  console.log('access v.11');
 
   var getUrlParameter = function getUrlParameter(sParam) {
       var sPageURL = window.location.search.substring(1),
           sURLVariables = sPageURL.split('#'),
           sParameterName,
           i;
-      let search = window.location.search;
-      let search_substring = window.location.search.substring(1);
-      let href = window.location.href;
-      console.log(`search ${search}`);
-      console.log(`search_substring ${search_substring}`);
-      console.log(`href ${href}`);
-      console.log(`spageURL ${sPageURL}`);
+
+      let split_str = window.location.split('#');
+      sURLVariables = split_str[1];
+
+      console.log(`window.location ${window.location}`);
       console.log(`sURLVariables ${sURLVariables}`);
 
       for (i = 0; i < sURLVariables.length; i++) {
