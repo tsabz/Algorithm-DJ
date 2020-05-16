@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  console.log('access v.13');
+  console.log('access v.14');
 
   var getUrlParameter = function getUrlParameter(sParam) {
       var sPageURL = window.location.search.substring(1),
@@ -8,7 +8,7 @@ $(document).ready(function(){
           i;
 
       let split_str = window.location.href.split('#');
-      sURLVariables = split_str[1];
+      sURLVariables = split_str[1].split('&');
 
       console.log(`window.location.href ${window.location.href}`);
       console.log(`sURLVariables ${sURLVariables}`);
