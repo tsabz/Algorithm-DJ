@@ -1,9 +1,9 @@
 $(document).ready(function(){
-  console.log('access v.6');
+  console.log('access v.7');
 
   var getUrlParameter = function getUrlParameter(sParam) {
       var sPageURL = window.location.search.substring(1),
-          sURLVariables = sPageURL.split('&'),
+          sURLVariables = sPageURL.split('#'),
           sParameterName,
           i;
 
