@@ -1,11 +1,13 @@
 $(document).ready(function(){
-  console.log('access v.8');
+  console.log('access v.9');
 
   var getUrlParameter = function getUrlParameter(sParam) {
       var sPageURL = window.location.search.substring(1),
           sURLVariables = sPageURL.split('#'),
           sParameterName,
           i;
+      let href = window.location.href;
+      console.log(`href ${href}`);
       console.log(`spageURL ${sPageURL}`);
       console.log(`sURLVariables ${sURLVariables}`);
 
