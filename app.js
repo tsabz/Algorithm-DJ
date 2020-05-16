@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  console.log('access v.12');
+  console.log('access v.13');
 
   var getUrlParameter = function getUrlParameter(sParam) {
       var sPageURL = window.location.search.substring(1),
@@ -15,7 +15,7 @@ $(document).ready(function(){
 
       for (i = 0; i < sURLVariables.length; i++) {
           sParameterName = sURLVariables[i].split('=');
-
+          console.log(`sParameterName ${sParameterName}`);
           if (sParameterName[0] === sParam) {
               return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
           }
