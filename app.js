@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  console.log('access v.3');
+  console.log('access v.4');
 
   var getUrlParameter = function getUrlParameter(sParam) {
       var sPageURL = window.location.search.substring(1),
@@ -20,7 +20,7 @@ $(document).ready(function(){
   console.log(accessToken);
 
   $.ajax({
-      url: 'https://api.spotify.com/v1/browse/new-releases',
+      url: 'https://api.spotify.com/v1/search?q=macklemore&type=artist',
       type: 'GET',
       headers: {
           'Authorization' : 'Bearer ' + accessToken
