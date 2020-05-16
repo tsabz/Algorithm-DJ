@@ -16,8 +16,8 @@ $(document).ready(function(){
       }
   };
 
-  //const accessToken = getUrlParameter('code');
-  //console.log(accessToken);
+  const accessToken = getUrlParameter('access_token');
+  console.log(accessToken);
 
   // $.ajax({
   //     url: 'https://api.spotify.com/v1/search?q=macklemore&type=artist',
