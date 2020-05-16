@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  console.log('access v.4');
+  console.log('access v.5');
 
   var getUrlParameter = function getUrlParameter(sParam) {
       var sPageURL = window.location.search.substring(1),
@@ -16,19 +16,19 @@ $(document).ready(function(){
       }
   };
 
-  const accessToken = getUrlParameter('code');
-  console.log(accessToken);
+  //const accessToken = getUrlParameter('code');
+  //console.log(accessToken);
 
-  $.ajax({
-      url: 'https://api.spotify.com/v1/search?q=macklemore&type=artist',
-      type: 'GET',
-      headers: {
-          'Authorization' : 'Bearer ' + accessToken
-      },
-      success: function(data) {
-        console.log('Success');
-        console.log(data);
-      }
-  });
+  // $.ajax({
+  //     url: 'https://api.spotify.com/v1/search?q=macklemore&type=artist',
+  //     type: 'GET',
+  //     headers: {
+  //         'Authorization' : 'Bearer ' + accessToken
+  //     },
+  //     success: function(data) {
+  //       console.log('Success');
+  //       console.log(data);
+  //     }
+  // });
 
 })
