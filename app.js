@@ -19,4 +19,16 @@ $(document).ready(function(){
   const accessToken = getUrlParameter('code');
   console.log(accessToken);
 
+  $.ajax({
+      url: 'https://api.spotify.com/v1/browse/new-releases',
+      type: 'GET',
+      headers: {
+          'Authorization' : 'Bearer ' + accessToken
+      },
+      success: function(data) {
+        console.log('Success');
+        console.log(data);
+      }
+  });
+
 })
