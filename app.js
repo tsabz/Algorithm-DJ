@@ -1,7 +1,5 @@
 $(document).ready(function(){
-  console.log('access');
-  const accessToken = getUrlParameter('code');
-  console.log(accessToken);
+  console.log('access v.2');
 
   var getUrlParameter = function getUrlParameter(sParam) {
       var sPageURL = window.location.search.substring(1),
@@ -17,5 +15,8 @@ $(document).ready(function(){
           }
       }
   };
+
+  const accessToken = getUrlParameter('code');
+  console.log(accessToken);
 
 })
