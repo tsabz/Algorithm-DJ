@@ -1,7 +1,7 @@
 # algorithm-DJ-Part-1
 What is this app?
 
-Its an app that lets you look up different Genres and sounds using Spotify
+I making an app about 
 
 
 
