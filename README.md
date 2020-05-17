@@ -1,6 +1,17 @@
 # algorithm-DJ-Part-1
+What is this app?
+
+Its an app that lets you look up different Genres and sounds using Spotify
 
 
+
+
+
+
+
+
+
+****************(authorization/token info)*****************************
 a50e8af7f71f499f874125d893e94b60
 
 adf4750881f940bb8412302969601d88

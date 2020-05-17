@@ -1,5 +1,5 @@
 $(() => {
-  console.log('access v.20');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
+  console.log('access v.21');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
 
   var getUrlParameter = function getUrlParameter(sParam) {
       var sPageURL = window.location.search.substring(1),
@@ -29,7 +29,7 @@ $(() => {
   console.log(`accessToken ${accessToken}`);
 
   $.ajax({
-      url: 'https://api.spotify.com/v1/search?q=macklemore&type=artist',
+      url: 'https://api.spotify.com/v1/search',
       type: 'GET',
       headers: {
           'Authorization' : 'Bearer ' + accessToken
