@@ -1,5 +1,8 @@
 $(() => {
-  console.log('access v.24');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
+  console.log('access v.28');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
+
+
+
 
   var getUrlParameter = function getUrlParameter(sParam) {
       var sPageURL = window.location.search.substring(1),
@@ -29,7 +32,7 @@ $(() => {
   console.log(`accessToken ${accessToken}`);
 
   $.ajax({
-      url: 'https://api.spotify.com/v1/search?q=macklemore&type=artist',
+      url: 'https://api.spotify.com/v1/search?q=needy&type=track',
       type: 'GET',
       headers: {
           'Authorization' : 'Bearer ' + accessToken
@@ -42,5 +45,6 @@ $(() => {
         console.log(JSON.stringify(data));
       }
   });
+
 
 })

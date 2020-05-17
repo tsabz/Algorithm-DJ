@@ -1,8 +1,32 @@
+* {
+  background-color: pink;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 body {
-  background-color: black;
+background: black;
 }
 
 iframe {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 200px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row
+  justify-content: space-around;
+  justify-content: space-between;
+  background-color: white;
+  display: flex;
+  margin: 4px 2px;
+   padding: 1em;
+}
+
+.drums {
+  border-radius: 50%;
 }
