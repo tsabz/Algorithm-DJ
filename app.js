@@ -1,5 +1,5 @@
 $(() => {
-  console.log('access v.30');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
+  console.log('access v.32');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
 
 
 
@@ -48,6 +48,9 @@ $(() => {
         console.log('================================ SUCCESS ========================');
         console.log('Success');
         console.log(JSON.stringify(data));
+        // Extract the id of the song from the data object
+        let id = data.tracks.items[0].id;
+        console.log(id);
       }
   });
 
