@@ -1,5 +1,5 @@
 $(() => {
-  console.log('access v.32');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
+  console.log('access v.33');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
 
 
 
@@ -50,7 +50,12 @@ $(() => {
         console.log(JSON.stringify(data));
         // Extract the id of the song from the data object
         let id = data.tracks.items[0].id;
-        console.log(id);
+        console.log(`id ${id}`);
+        // Add id value to the src attribute of thespotify  iframe
+        // construct the following string https://open.spotify.com/track/ + id
+        let src_str = `https://open.spotify.com/track/${id}`;
+        console.log(`src_str ${src_str}`);
+        $("#needy").attr("src", src_str);
       }
   });
 
