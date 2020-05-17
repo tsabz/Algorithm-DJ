@@ -1,5 +1,5 @@
-$(document).ready(function(){
-  console.log('access v.19');
+$(() => {
+  console.log('access v.20');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
 
   var getUrlParameter = function getUrlParameter(sParam) {
       var sPageURL = window.location.search.substring(1),
