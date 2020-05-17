@@ -11,6 +11,7 @@ body {
 background: black;
 }
 
+<<<<<<< HEAD
 iframe {
   width: 400px;
   height: 200px;
@@ -30,3 +31,9 @@ iframe {
 .drums {
   border-radius: 50%;
 }
+=======
+/* iframe {
+  width: 500px;
+  height: 500px;
+} */
+>>>>>>> 8430bb9a402b4599c6d4f73f28b3ff88a427839e

@@ -1,8 +1,18 @@
 $(() => {
+<<<<<<< HEAD
   console.log('access v.28');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
 
 
 
+=======
+  console.log('access v.27');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
+
+
+  $("#btn").on("click", function() {
+    var audio = $("#audio")[0];
+    audio.play();
+  });
+>>>>>>> 8430bb9a402b4599c6d4f73f28b3ff88a427839e
 
   var getUrlParameter = function getUrlParameter(sParam) {
       var sPageURL = window.location.search.substring(1),
