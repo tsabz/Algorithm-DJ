@@ -53,7 +53,7 @@ $(() => {
         console.log(`id ${id}`);
         // Add id value to the src attribute of thespotify  iframe
         // construct the following string https://open.spotify.com/track/ + id
-        let src_str = `https://open.spotify.com/track/${id}`;
+        let src_str = `https://open.spotify.com/embed/track/${id}`;
         console.log(`src_str ${src_str}`);
         let iframe = `<iframe src=${src_str} width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
         let parent_div = $('#parent-div');
