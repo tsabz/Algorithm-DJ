@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  console.log('access v.19');
+  console.log('access v.20');
 
   var getUrlParameter = function getUrlParameter(sParam) {
       var sPageURL = window.location.search.substring(1),
