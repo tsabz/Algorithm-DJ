@@ -1,5 +1,5 @@
 $(() => {
-  console.log('access v.25');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
+  console.log('access v.26');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
 
   var getUrlParameter = function getUrlParameter(sParam) {
       var sPageURL = window.location.search.substring(1),
