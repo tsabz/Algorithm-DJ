@@ -21,6 +21,9 @@ $(() => {
     audio.play();
   });
 
+
+/////https://stackoverflow.com/questions/2988050/html5-audio-player-jquery-toggle-click-play-pause
+
   var getUrlParameter = function getUrlParameter(sParam) {
       var sPageURL = window.location.search.substring(1),
           sURLVariables = sPageURL.split('#'),

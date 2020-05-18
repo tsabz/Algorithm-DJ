@@ -15,18 +15,18 @@ background-color: black;
 }
 
 .navbar {
+  display: flex;
   overflow: hidden;
-  background-color: #d19592;
-  background-image: linear-gradient(315deg, #d19592 0%, #c81f70 74%);
+  background-color: blanchedalmond;
   position: fixed;
   top: 0;
   width: 100%;
+  padding: 20px;
   justify-content: space-around;
 }
 
 .navbar a {
-  background-color: #d19592;
-  background-image: linear-gradient(315deg, #d19592 0%, #c81f70 74%);
+  background-color: blanchedalmond;
     padding: 18px 22px;
 }
 a {
@@ -35,12 +35,15 @@ a {
   justify-content: space-between;
 }
 
-
+.songs{
+  display: flex;
+  bottom: 400px;
+  margin: 100px;
+}
 
 iframe {
   width: 400px;
   height: 200px;
-  margin 100px;
 }
 
 .buttons {
@@ -50,20 +53,21 @@ iframe {
   justify-content: space-between;
   display: flex;
   margin: 4px 2px;
-   padding: 1em;
+  padding: 1em;
 }
 
 .drums {
   border-radius: 50%;
   padding: 2em;
   cursor: pointer;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
 }
 
 
 
 @media (min-width: 600px) {
  body {
-   background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+   background-color: pink;
  }
 }
 =======
