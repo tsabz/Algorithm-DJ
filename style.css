@@ -1,5 +1,12 @@
-* {
-  background-color: pink;
+
+body {
+background-color: black;
+}
+
+.audio{
+  display: block;
+  margin: auto;
+  width: anything under 100%
 }
 .container {
   display: flex;
@@ -7,9 +14,23 @@
   justify-content: space-around;
 }
 
-body {
-background: black;
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-around;
 }
+
+.navbar a {
+  background-color: white;
+}
+a{
+  text-decoration: none;
+  align-items: center;
+}
+
 
 
 iframe {
@@ -22,7 +43,6 @@ iframe {
   flex-direction: row
   justify-content: space-around;
   justify-content: space-between;
-  background-color: white;
   display: flex;
   margin: 4px 2px;
    padding: 1em;
@@ -30,6 +50,16 @@ iframe {
 
 .drums {
   border-radius: 50%;
+  padding: 2em;
+  cursor: pointer;
+}
+
+
+
+@media (min-width: 600px) {
+ body {
+  background: pink;
+ }
 }
 =======
 /* iframe {

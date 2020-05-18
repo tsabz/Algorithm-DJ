@@ -43,11 +43,9 @@ $(() => {
           'Authorization' : 'Bearer ' + accessToken
       },
       success: function(data) {
-        console.log(' ');
-        console.log(' ');
-        console.log('================================ SUCCESS ========================');
         console.log('Success');
-        console.log(JSON.stringify(data));
+        console.log(JSON.stringify(data));  ////https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+
         // Extract the id of the song from the data object
         let id = data.tracks.items[0].id;
         console.log(`id ${id}`);
