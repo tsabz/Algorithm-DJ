@@ -1,7 +1,5 @@
 $(() => {
-  console.log('access v.40');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
-
-
+  console.log('access v.41');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
 
   $('#drums').on('click', function() {
     const audio = new Audio("soundz/SONNY_D_percussion_loop_04_133.wav");
@@ -18,17 +16,15 @@ $(() => {
     audio.play();
   });
 
-
   $('#kick').click(function() {
     const audio = new Audio("soundz/SONNY_D_kick_07.wav");
     audio.play();
   });
 
-
 /////https://stackoverflow.com/questions/2988050/html5-audio-player-jquery-toggle-click-play-pause
 
-  var getUrlParameter = function getUrlParameter(sParam) {
-      var sPageURL = window.location.search.substring(1),
+  const getUrlParameter = (sParam) => {
+      let sPageURL = window.location.search.substring(1),
           sURLVariables = sPageURL.split('#'),
           sParameterName,
           i;
@@ -54,7 +50,7 @@ $(() => {
   const accessToken = getUrlParameter('access_token');
   console.log(`accessToken ${accessToken}`);
 
-  $.ajax({
+  $.ajax ({
       url: 'https://api.spotify.com/v1/search?q=needy&type=track',
       type: 'GET',
       headers: {
@@ -62,7 +58,6 @@ $(() => {
       },
       success: function(data) {
         console.log('Success');
-        console.log(JSON.stringify(data));  ////https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
 
         // Extract the id of the song from the data object
         let id = data.tracks.items[0].id;
