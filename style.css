@@ -27,18 +27,20 @@ background-color: black;
 
 .navbar a {
   background-color: blanchedalmond;
-    padding: 18px 22px;
+    /* padding: 18px 22px; */
 }
 a {
   text-decoration: none;
   align-items: center;
   justify-content: space-between;
+  color: GREEN;
 }
 
 .songs{
   display: flex;
+  justify-content: center;
   bottom: 400px;
-  margin: 100px;
+  margin: 200px;
 }
 
 iframe {
