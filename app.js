@@ -3,11 +3,23 @@ $(() => {
 
 
 
-  // $("#btn").on("click", function() {
-  //   var audio = $("#audio")[0];
-  //   audio.play();
-  // });
+  $('#drums').click(function() {
+    const audio = new Audio("soundz/SONNY_D_percussion_loop_04_133.wav");
+    audio.play();
+  });
+  $('#vocals').click(function() {
+    const audio = new Audio("soundz/needy (Studio Acapella).mp3");
+    audio.play();
+  });
 
+  $('#shakers').click(function() {
+    const audio = new Audio("soundz/OLIVER_percussion_loop_shaker_and_tambourine_102.wav");
+    audio.play();
+  });
+  $('#kick').click(function() {
+    const audio = new Audio("soundz/SONNY_D_kick_07.wav");
+    audio.play();
+  });
 
   var getUrlParameter = function getUrlParameter(sParam) {
       var sPageURL = window.location.search.substring(1),
