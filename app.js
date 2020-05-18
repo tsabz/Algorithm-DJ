@@ -1,12 +1,13 @@
 $(() => {
-  console.log('access v.37');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
+  console.log('access v.39');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
 
 
 
-  $('#drums').click(function() {
+  $('#drums').on('click', function() {
     const audio = new Audio("soundz/SONNY_D_percussion_loop_04_133.wav");
     audio.play();
   });
+
   $('#vocals').click(function() {
     const audio = new Audio("soundz/needy (Studio Acapella).mp3");
     audio.play();
@@ -16,6 +17,8 @@ $(() => {
     const audio = new Audio("soundz/OLIVER_percussion_loop_shaker_and_tambourine_102.wav");
     audio.play();
   });
+
+
   $('#kick').click(function() {
     const audio = new Audio("soundz/SONNY_D_kick_07.wav");
     audio.play();
