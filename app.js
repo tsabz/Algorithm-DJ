@@ -1,5 +1,5 @@
 $(() => {
-  console.log('access v.39');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
+  console.log('access v.40');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
 
 
 
@@ -71,7 +71,7 @@ $(() => {
         // construct the following string https://open.spotify.com/track/ + id
         let src_str = `https://open.spotify.com/embed/track/${id}`;
         console.log(`src_str ${src_str}`);
-        let iframe = `<iframe src=${src_str} width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+        let iframe = `<iframe src=${src_str} frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
         let parent_div = $('#parent-div');
         parent_div.append(iframe);
         // $("#needy").attr("src", src_str);
