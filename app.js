@@ -1,23 +1,8 @@
 $(() => {
   console.log('access v.44');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
-  // Audio tracks defined globally
 
-//   $('#drums').click(function () {
-//     play("soundz/SONNY_D_percussion_loop_04_133.wav")
-//     // audioPause("soundz/SONNY_D_percussion_loop_04_133.wav")
-//   })
-//
-// const play = (audio) => {
-//   this.play();
-// }
-//
-// const pause = (audio) => {
-//   this.pause();
-// }
-//
-// $('#drums').click(function () {
-//   play("soundz/SONNY_D_percussion_loop_04_133.wav")
-//   // audioPause("soundz/SONNY_D_percussion_loop_04_133.wav")
+
+  // Audio tracks defined globally
   const audioDrums = new Audio("soundz/SONNY_D_percussion_loop_04_133.wav");
   const audioVocals = new Audio("soundz/needy (Studio Acapella).mp3");
   const audioShakers = new Audio("soundz/OLIVER_percussion_loop_shaker_and_tambourine_102.wav");
@@ -39,7 +24,7 @@ $(() => {
     if(audioVocalsCount % 2 !== 0){
       audioVocals.play();
     } else {
-      audioVocals.pause();  
+      audioVocals.pause();
     }
   });
 
