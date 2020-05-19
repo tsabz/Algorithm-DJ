@@ -1,9 +1,29 @@
 # algorithm-DJ-Part-1
+
+#Motivation for this app
 What is this app?
 
 I making an app about Ariana Grande's song Needy and my remix to it.  
+My motivation behind this is to start building a portfolio that showcases
+my DEV projects and audio production together.  
 
- 
+
+**********
+When clicking on the link to the project, you are clicking on an authorize link that will redirect you to my page. Why?
+I am using spotify's API, which will need the user to authorize their account before they are able to check out the data pulled from the site, which in this case is Ariana Grande's - Needy track.  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

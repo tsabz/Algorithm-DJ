@@ -1,5 +1,5 @@
 $(() => {
-  console.log('access v.44');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
+  console.log('access v.45');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
 
 
   // Audio tracks defined globally
