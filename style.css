@@ -17,25 +17,31 @@ background-color: black;
 .navbar {
   display: flex;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #1c1818;
   position: fixed;
   top: 0;
   width: 100%;
   padding: 20px;
   justify-content: space-around;
 
-
 }
 
 .navbar a {
-  background-color: #ffffff;
+  background-color:#1c1818;
     /* padding: 18px 22px; */
 }
+
+.navbar a:hover {
+  background-color: #967d8d;
+  padding: 10px;
+  border-radius: 10%;
+}
+
 a {
   text-decoration: none;
   align-items: center;
   justify-content: space-between;
-  color: black;
+  color: blanchedalmond;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -51,6 +57,10 @@ a {
 iframe {
   width: 400px;
   height: 200px;
+}
+
+iframe:hover {
+  background-color: #967d8d;
 }
 
 .buttons {

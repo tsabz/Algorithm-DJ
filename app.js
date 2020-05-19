@@ -1,6 +1,24 @@
 $(() => {
-  console.log('access v.41');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
+  console.log('access v.42');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
   // Audio tracks defined globally
+
+//   $('#drums').click(function () {
+//     play("soundz/SONNY_D_percussion_loop_04_133.wav")
+//     // audioPause("soundz/SONNY_D_percussion_loop_04_133.wav")
+//   })
+//
+// const play = (audio) => {
+//   this.play();
+// }
+//
+// const pause = (audio) => {
+//   this.pause();
+// }
+//
+// $('#drums').click(function () {
+//   play("soundz/SONNY_D_percussion_loop_04_133.wav")
+//   // audioPause("soundz/SONNY_D_percussion_loop_04_133.wav")
+
 
   $('#drums').click(function() {
     const audioDrums = new Audio("soundz/SONNY_D_percussion_loop_04_133.wav");
