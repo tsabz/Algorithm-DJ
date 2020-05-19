@@ -12,6 +12,7 @@ my DEV projects and audio production together.
 When clicking on the link to the project, you are clicking on an authorize link that will redirect you to my page. Why?
 I am using spotify's API, which will need the user to authorize their account before they are able to check out the data pulled from the site, which in this case is Ariana Grande's - Needy track.  
 
+https://github.com/tsabz/Algorthim-DJ-Part-1-/issues/1#issue-621161995 
 
 
 
