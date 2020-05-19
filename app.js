@@ -1,24 +1,25 @@
 $(() => {
   console.log('access v.41');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
+  // Audio tracks defined globally
 
-  $('#drums').on('click', function() {
-    const audio = new Audio("soundz/SONNY_D_percussion_loop_04_133.wav");
-    audio.play();
+  $('#drums').click(function() {
+    const audioDrums = new Audio("soundz/SONNY_D_percussion_loop_04_133.wav");
+    audioDrums.play();
   });
 
   $('#vocals').click(function() {
-    const audio = new Audio("soundz/needy (Studio Acapella).mp3");
-    audio.play();
+    const audioVocals = new Audio("soundz/needy (Studio Acapella).mp3");
+    audioVocals.play();
   });
 
   $('#shakers').click(function() {
-    const audio = new Audio("soundz/OLIVER_percussion_loop_shaker_and_tambourine_102.wav");
-    audio.play();
+    const audioShakers = new Audio("soundz/OLIVER_percussion_loop_shaker_and_tambourine_102.wav");
+    audioShakers.play();
   });
 
   $('#kick').click(function() {
-    const audio = new Audio("soundz/SONNY_D_kick_07.wav");
-    audio.play();
+    const audioKick = new Audio("soundz/SONNY_D_kick_07.wav");
+    audioKick.play();
   });
 
 /////https://stackoverflow.com/questions/2988050/html5-audio-player-jquery-toggle-click-play-pause
@@ -45,7 +46,8 @@ $(() => {
               return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
           }
       }
-  };
+  };  /////////https://gomakethings.com/getting-all-query-string-values-from-a-url-with-vanilla-js/
+  /////https://stackoverflow.com/questions/979975/how-to-get-the-value-from-the-get-parameters .... had outside help with this issue.
 
   const accessToken = getUrlParameter('access_token');
   console.log(`accessToken ${accessToken}`);
