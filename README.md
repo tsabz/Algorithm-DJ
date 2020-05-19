@@ -10,28 +10,46 @@ my DEV projects and audio production together.
 
 **********
 When clicking on the link to the project, you are clicking on an authorize link that will redirect you to my page. Why?
-I am using spotify's API, which will need the user to authorize their account before they are able to check out the data pulled from the site, which in this case is Ariana Grande's - Needy track.  
+I am using spotify's API, which will need the user to authorize their account before they are able to check out the data pulled from the site, which in this case is Ariana Grande's - Needy track.  - Think about it this way..Are you able to use spotify if you do not sign in? Check out the link below for an example of the page. 
 
 https://github.com/tsabz/Algorthim-DJ-Part-1-/issues/1#issue-621161995 
 
+This gave me a lot of difficulty as a beginner DEV and this being my first project, I had not yet heard of creating an additional HTML and JS file just for the authorize page.  I was stuck on this issue for a bit, without creating those files, my page kept refereshing itself , because the URL redirect was the page itself. Let's take a look at the url below:
+https://accounts.spotify.com/en/authorize?client_id=a50e8af7f71f499f874125d893e94b60&response_type=token&redirect_uri=https:%2F%2Ftsabz.github.io%2FAlgorthim-DJ-Part-1-%2F 
+When creating a spoitfy DEV acount I was given a client ID and a secret client ID and was also asked to input my Recirect URL page , the endpoint being my main site. 
+The key Value pairs in the URL:  
+https://accounts.spotify.com/en/authorize? - the link to the authorize spotify page
+Client Id = a50e8af7f71f499f874125d893e94b60
+Response_Type = token - This token is CRUCIAL to accessing spotify's data, we are retrieving this value once we authorize. 
+redirect_uri = https:%2F%2Ftsabz.github.io%2FAlgorthim-DJ-Part-1-%2F - this being my webpage which we will be redirected to once we authorize. 
+**************************
+Once we have been granted access we are redirected to the webpage that has then give us the token in the URI 
+https://github.com/tsabz/Algorthim-DJ-Part-1-/issues/2#issue-621174072
+
+lets take a closer look at this URI
+https://tsabz.github.io/Algorthim-DJ-Part-1-/#access_token=BQC1XtNy7kQAyjwuzN97UmvAWQUXOJNZJndj74OB-Inq9zbGK1es_uZLHHEUkk4CNRsOxg67hxzHvhum4F8OI3W61UF32fStdchiHEJSGA7P3ocTa6ozIiM7APAxjLYahDQLmlHndVc&token_type=Bearer&expires_in=3600
+
+Here we have an our https link to our site ... 
+https://tsabz.github.io/Algorthim-DJ-Part-1-/ 
+#access_token=BQC1XtNy7kQAyjwuzN97UmvAWQUXOJNZJndj74OB-Inq9zbGK1es_uZLHHEUkk4CNRsOxg67hxzHvhum4F8OI3W61UF32fStdchiHEJSGA7P3ocTa6ozIiM7APAxjLYahDQLmlHndVc - our access token NEEDED 
+for our AJAX code, without this we are unable to access spotify's data.  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
 
 
 ****************(authorization/token info)*****************************
