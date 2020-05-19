@@ -43,27 +43,28 @@ $(() => {
           sURLVariables = sPageURL.split('#'),
           sParameterName,
           i;
-
       let split_str = window.location.href.split('#');
       sURLVariables = split_str[1].split('&');
-
+        ////substring will take everything after the https link and split the # &
       console.log(`window.location.href ${window.location.href}`);
       console.log(`sURLVariables ${sURLVariables}`);
+      ///sURLVariables access_token=BQDrSKfcWtBS7Jf_I3-NwkyKddJu2vRcm4KmmM15kBgVM0lwPepmh6qy7lQ1N8Ij1HRdbmXA3mqkfiaVaIFOogN93JG9urXQcPrMuP2MLiKC0EP-M7SJFQtAR71M339hHc1Rpy1gUCQ,token_type=Bearer,expires_in=3600
 
       for (i = 0; i < sURLVariables.length; i++) {
           sParameterName = sURLVariables[i].split('=');
-          console.log(`sParameterName[0] ${sParameterName[0]}`);
-          console.log(`sParam ${sParam}`);
-          console.log(`sParameterName[0] === sParam ${sParameterName[0] === sParam}`);
+          console.log(`sParameterName[0] ${sParameterName[0]}`); ///sParameterName[0] access_token
+          console.log(`sParam ${sParam}`); ////sParam access_token
+          console.log(`sParameterName[0] === sParam ${sParameterName[0] === sParam}`); ////sParameterName[0] === sParam true
           if (sParameterName[0] === sParam) {
-              console.log(`sParameterName[1] ${sParameterName[1]}`);
+              console.log(`sParameterName[1] ${sParameterName[1]}`); ////sParameterName[1] BQDrSKfcWtBS7Jf_I3-NwkyKddJu2vRcm4KmmM15kBgVM0lwPepmh6qy7lQ1N8Ij1HRdbmXA3mqkfiaVaIFOogN93JG9urXQcPrMuP2MLiKC0EP-M7SJFQtAR71M339hHc1Rpy1gUCQ <------ console logging the token number itself
               return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
           }
       }
   };  /////////https://gomakethings.com/getting-all-query-string-values-from-a-url-with-vanilla-js/
-  /////https://stackoverflow.com/questions/979975/how-to-get-the-value-from-the-get-parameters .... had outside help with this issue.
+  /////https://stackoverflow.com/questions/979975/how-to-get-the-value-from-the-get-parameters
+  ////https://stackoverflow.com/questions/19491336/get-url-parameter-jquery-or-how-to-get-query-string-values-in-js
 
-  const accessToken = getUrlParameter('access_token');
+  const accessToken = getUrlParameter('access_token'); ///accessToken BQDrSKfcWtBS7Jf_I3-NwkyKddJu2vRcm4KmmM15kBgVM0lwPepmh6qy7lQ1N8Ij1HRdbmXA3mqkfiaVaIFOogN93JG9urXQcPrMuP2MLiKC0EP-M7SJFQtAR71M339hHc1Rpy1gUCQ
   console.log(`accessToken ${accessToken}`);
 
   $.ajax ({
@@ -73,11 +74,11 @@ $(() => {
           'Authorization' : 'Bearer ' + accessToken
       },
       success: function(data) {
-        console.log('Success');
+        console.log('Success'); ////log success if the token goes through
 
         // Extract the id of the song from the data object
         let id = data.tracks.items[0].id;
-        console.log(`id ${id}`);
+        console.log(`id ${id}`); ////id 1TEL6MlSSVLSdhOSddidlJ
         // Add id value to the src attribute of thespotify  iframe
         // construct the following string https://open.spotify.com/track/ + id
         let src_str = `https://open.spotify.com/embed/track/${id}`;
