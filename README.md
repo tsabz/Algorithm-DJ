@@ -1,3 +1,7 @@
+PROJECT STATUS  
+first ever project.. looking to further my skills and continue this concept for my website. 
+
+
 # algorithm-DJ-Part-1
 
 #Motivation for this app
@@ -6,8 +10,11 @@ What is this app?
 I making an app about Ariana Grande's song Needy and my remix to it.  
 My motivation behind this is to start building a portfolio that showcases
 my DEV projects and audio production together.  
-
-
+*******************
+Features
+sticky nav hightling my social media and streaming sites of where you can find my music,
+the original track called needy by Ariana Grande and the my remix to it
+then created some buttons to hear some of the samples I used to create the song. 
 **********
 When clicking on the link to the project, you are clicking on an authorize link that will redirect you to my page. Why?
 I am using spotify's API, which will need the user to authorize their account before they are able to check out the data pulled from the site, which in this case is Ariana Grande's - Needy track.  - Think about it this way..Are you able to use spotify if you do not sign in? Check out the link below for an example of the page. 
@@ -31,9 +38,29 @@ https://tsabz.github.io/Algorthim-DJ-Part-1-/#access_token=BQC1XtNy7kQAyjwuzN97U
 
 Here we have an our https link to our site ... 
 https://tsabz.github.io/Algorthim-DJ-Part-1-/ 
-#access_token=BQC1XtNy7kQAyjwuzN97UmvAWQUXOJNZJndj74OB-Inq9zbGK1es_uZLHHEUkk4CNRsOxg67hxzHvhum4F8OI3W61UF32fStdchiHEJSGA7P3ocTa6ozIiM7APAxjLYahDQLmlHndVc - our access token NEEDED 
+#access_token=BQC1XtNy7kQAyjwuzN97UmvAWQUXOJNZJndj74OB-     Inq9zbGK1es_uZLHHEUkk4CNRsOxg67hxzHvhum4F8OI3W61UF32fStdchiHEJSGA7P3ocTa6ozIiM7APAxjLYahDQLmlHndVc - our access token NEEDED 
 for our AJAX code, without this we are unable to access spotify's data.  
+*******************************
+We now been redirected , lets jump into app.js code . 
+spotify provides us with their ajax code --- 
+  $.ajax ({
+      url: 'https://api.spotify.com/v1/search?q=needy&type=track', <------- my end point to the track "needy" 
+      type: 'GET',
+      headers: {
+          'Authorization' : 'Bearer ' + accessToken <-------------NOTE YOU CANNOT HARD CODE THE TOKEN (learned the hard way)
+      },
+      success: function(data) {
+        console.log('Success');
 
+therefore... 
+We must pull the token from the URL itself. I used a code from stackoverflow
+https://stackoverflow.com/questions/19491336/get-url-parameter-jquery-or-how-to-get-query-string-values-in-js
+In this code , all we are doing is pull the token and splitting off all the extra characters : 
+https://tsabz.github.io/Algorthim-DJ-Part-1-/#access_token=BQC1XtNy7kQAyjwuzN97UmvAWQUXOJNZJndj74OB-Inq9zbGK1es_uZLHHEUkk4CNRsOxg67hxzHvhum4F8OI3W61UF32fStdchiHEJSGA7P3ocTa6ozIiM7APAxjLYahDQLmlHndVc&token_type=Bearer&expires_in=3600
+
+Using window.location.search will take the substring of the url in this case:  #access_token=BQC1XtNy7kQAyjwuzN97UmvAWQUXOJNZJndj74OB-Inq9zbGK1es_uZLHHEUkk4CNRsOxg67hxzHvhum4F8OI3W61UF32fStdchiHEJSGA7P3ocTa6ozIiM7APAxjLYahDQLmlHndVc&token_type=Bearer&expires_in=3600
+
+Please refer to app.js file for further notes on get URL code. 
 
 *
 *
