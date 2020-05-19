@@ -6,7 +6,6 @@ background-color: black;
 .audio {
   display: block;
   margin: auto;
-  width: anything under 100%
 }
 .container {
   display: flex;
@@ -16,13 +15,13 @@ background-color: black;
 
 .navbar {
   display: flex;
-  overflow: hidden;
   background-color: #1c1818;
   position: fixed;
   top: 0;
   width: 100%;
   padding: 20px;
   justify-content: space-around;
+  box-shadow: 0px 0px 2px #FFFFFF;
 
 }
 
@@ -56,7 +55,7 @@ a {
 }
 
 iframe {
-  width: 400px;
+  width: 600px;
   height: 200px;
   border-radius: 2%;
   box-shadow: 0px 0px 3px #967d8d;
@@ -66,19 +65,19 @@ iframe {
 
 .buttons {
   display: flex;
-  flex-direction: row
+  flex-direction: column;
   justify-content: space-around;
   justify-content: space-between;
-  display: flex;
   margin: 4px 2px;
   padding: 1em;
 }
 
 .drums {
-  border-radius: 50%;
+  border-radius: 2%;
   padding: 2em;
   cursor: pointer;
-  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  background-image: linear-gradient(to right, #000000 0%, #301621 100%);
+  COLOR: blanchedalmond;
 }
 
 .drums:hover{
@@ -91,6 +90,11 @@ iframe {
    background-color: black;
  }
 }
+
+
+
+
+
 =======
 /* iframe {
   width: 500px;
