@@ -54,6 +54,11 @@ a {
   margin: 200px;
 }
 
+#parent-div {
+  display: flex;
+  flex-direction: column;
+}
+
 iframe {
   display: flex;
   flex-direction: column;
@@ -79,21 +84,21 @@ iframe {
   padding: 2em;
   cursor: pointer;
   background-image: linear-gradient(to right, #000000 0%, #301621 100%);
-  margin: 5px;
+  margin: 15px;
   COLOR: blanchedalmond;
 }
 
 .drums:hover{
-  box-shadow: 0px 0px 10px #ffffff;
+  box-shadow: 0px 0px 15px #ffffff;
 }
 
-/* 
+
 @media (min-width: 600px) {
  iframe {
    display: flex;
    flex-direction: column;
  }
-} */
+}
 
 
 
