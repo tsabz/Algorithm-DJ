@@ -87,13 +87,13 @@ iframe {
   box-shadow: 0px 0px 10px #ffffff;
 }
 
-
+/* 
 @media (min-width: 600px) {
  iframe {
    display: flex;
    flex-direction: column;
  }
-}
+} */
 
 
 

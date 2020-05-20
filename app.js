@@ -7,15 +7,15 @@ $(() => {
   const audioVocals = new Audio("soundz/needy (Studio Acapella).mp3");
   const audioShakers = new Audio("soundz/OLIVER_percussion_loop_shaker_and_tambourine_102.wav");
   const audioKick = new Audio("soundz/SONNY_D_kick_07.wav");
-  let audioDrumsCount = 0
-  let audioVocalsCount = 0
+  let audioDrumsCount = 0 // counter
+  let audioVocalsCount = 0 //counter
 
   $('#drums').click(function() {
-    audioDrumsCount++
-    if(audioDrumsCount % 2 !== 0) {
-      audioDrums.play();
-  } else {
-    audioDrums.pause();
+    audioDrumsCount++ ///adds to the counter
+    if(audioDrumsCount % 2 !== 0) { ///if the click is not even or divisible by two
+      audioDrums.play(); ///play the song
+  } else { // all else - which would be odd
+    audioDrums.pause(); //pause
   }
   });
 
@@ -35,17 +35,16 @@ $(() => {
   $('#kick').click(function() {
     audioKick.play();
   });
-
 /////https://stackoverflow.com/questions/2988050/html5-audio-player-jquery-toggle-click-play-pause
 
   const getUrlParameter = (sParam) => {
-      let sPageURL = window.location.search.substring(1),
+      let sPageURL = window.location.search.substring(1),////substring will take everything after the https link and split the #/&
           sURLVariables = sPageURL.split('#'),
           sParameterName,
           i;
       let split_str = window.location.href.split('#');
       sURLVariables = split_str[1].split('&');
-        ////substring will take everything after the https link and split the # &
+
       console.log(`window.location.href ${window.location.href}`);
       console.log(`sURLVariables ${sURLVariables}`);
       ///sURLVariables access_token=BQDrSKfcWtBS7Jf_I3-NwkyKddJu2vRcm4KmmM15kBgVM0lwPepmh6qy7lQ1N8Ij1HRdbmXA3mqkfiaVaIFOogN93JG9urXQcPrMuP2MLiKC0EP-M7SJFQtAR71M339hHc1Rpy1gUCQ,token_type=Bearer,expires_in=3600
