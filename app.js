@@ -1,5 +1,5 @@
 $(() => {
-  console.log('access v.45');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
+  console.log('access v.46');////my browser does not refresh every time, had to keep a tracker of which version gets uploaded.
 
 
   // Audio tracks defined globally
@@ -36,6 +36,7 @@ $(() => {
     audioKick.play();
   });
 /////https://stackoverflow.com/questions/2988050/html5-audio-player-jquery-toggle-click-play-pause
+///talked throught the pause function with Eric B
 
   const getUrlParameter = (sParam) => {
       let sPageURL = window.location.search.substring(1),////substring will take everything after the https link and split the #/&

@@ -93,12 +93,12 @@ iframe {
 }
 
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
  iframe {
    display: flex;
    flex-direction: column;
  }
-}
+} */
 
 
 
