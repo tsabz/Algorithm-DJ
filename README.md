@@ -1,21 +1,24 @@
-PROJECT STATUS  
+##PROJECT STATUS  
 first ever project.. looking to further my skills and continue this concept for my website. 
 
 
 # algorithm-DJ-Part-1
 
 #Motivation for this app
-What is this app?
+###What is this app?
 
 I making an app about Ariana Grande's song Needy and my remix to it.  
 My motivation behind this is to start building a portfolio that showcases
 my DEV projects and audio production together.  
+
 *******************
-Features
+
+###Features
 sticky nav hightling my social media and streaming sites of where you can find my music,
 the original track called needy by Ariana Grande and the my remix to it
 then created some buttons to hear some of the samples I used to create the song. 
 **********
+
 When clicking on the link to the project, you are clicking on an authorize link that will redirect you to my page. Why?
 I am using spotify's API, which will need the user to authorize their account before they are able to check out the data pulled from the site, which in this case is Ariana Grande's - Needy track.  - Think about it this way..Are you able to use spotify if you do not sign in? Check out the link below for an example of the page. 
 
@@ -30,6 +33,7 @@ Client Id = a50e8af7f71f499f874125d893e94b60
 Response_Type = token - This token is CRUCIAL to accessing spotify's data, we are retrieving this value once we authorize. 
 redirect_uri = https:%2F%2Ftsabz.github.io%2FAlgorthim-DJ-Part-1-%2F - this being my webpage which we will be redirected to once we authorize. 
 **************************
+
 Once we have been granted access we are redirected to the webpage that has then give us the token in the URI 
 https://github.com/tsabz/Algorthim-DJ-Part-1-/issues/2#issue-621174072
 
@@ -61,6 +65,13 @@ https://tsabz.github.io/Algorthim-DJ-Part-1-/#access_token=BQC1XtNy7kQAyjwuzN97U
 Using window.location.search will take the substring of the url in this case:  #access_token=BQC1XtNy7kQAyjwuzN97UmvAWQUXOJNZJndj74OB-Inq9zbGK1es_uZLHHEUkk4CNRsOxg67hxzHvhum4F8OI3W61UF32fStdchiHEJSGA7P3ocTa6ozIiM7APAxjLYahDQLmlHndVc&token_type=Bearer&expires_in=3600
 
 Please refer to app.js file for further notes on get URL code. 
+
+**************************
+###Improvements
+
+There is a bug in that when I shrink the page the iframes do not move, and for some reason could not get it to work.  Improvements I would make would definitely be with styling.  I think I should of added a lot complex user designs such as a carosel or modal 
+
+my stick navy is different on both ends.  I am not really sure what is causing this issue.  Tried to play with it several times and could not get it to work.  
 
 *
 *
