@@ -1,10 +1,12 @@
 ##PROJECT STATUS  
+
 first ever project.. looking to further my skills and continue this concept for my website. 
 
 
 # algorithm-DJ-Part-1
 
 #Motivation for this app
+
 ###What is this app?
 
 I making an app about Ariana Grande's song Needy and my remix to it.  
@@ -14,6 +16,7 @@ my DEV projects and audio production together.
 *******************
 
 ###Features
+
 sticky nav hightling my social media and streaming sites of where you can find my music,
 the original track called needy by Ariana Grande and the my remix to it
 then created some buttons to hear some of the samples I used to create the song. 
