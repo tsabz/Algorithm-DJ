@@ -3,7 +3,7 @@
 first ever project.. looking to further my skills and continue this concept for my website. 
 
 
-# algorithm-DJ-Part-1
+# Algorithm-DJ-Part-1
 
 #Motivation for this app
 
